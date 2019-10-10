@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 This project Hosted on this link (https://weather-app.eslamfcih.now.sh).
 
+![alt text](https://github.com/EslaM-M/weather-app/blob/master/image.png)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
