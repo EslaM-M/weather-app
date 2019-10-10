@@ -1,0 +1,18 @@
+<div class="card my-2" (click)="goToCityPage(city)" *ngIf="city">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="../../../../assets/images/{{city.name.toLowerCase()}}.jpg" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center">
+          <h5 class="card-title">{{city.name}}</h5>
+          <img src="https://openweathermap.org/img/wn/{{city.weather.icon}}@2x.png" class="icon weather-icon"
+            alt="temperature">
+        </div>
+        <p class="card-text">{{city.description}}</p>
+        <app-weather-details [wind]="city.wind" [temperature]="city.temperature"></app-weather-details>
+      </div>
+    </div>
+  </div>
+</div>

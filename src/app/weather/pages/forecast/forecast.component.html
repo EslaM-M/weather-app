@@ -1,0 +1,7 @@
+<div class="container" *ngIf="city">
+  <app-weather-card [city]="city"></app-weather-card>
+  <ul class="list-group my-20">
+    <h4>Forecast for {{city.time | date: 'dd/MM/yyyy'}} Every Three Hours</h4>
+    <app-weather-forecast [forecast]="forecast" *ngFor="let forecast of city.forecastList"></app-weather-forecast>
+  </ul>
+</div>

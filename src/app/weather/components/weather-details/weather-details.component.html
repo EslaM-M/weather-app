@@ -1,0 +1,4 @@
+<div class="d-flex justify-content-between align-items-center" *ngIf="temperature && wind">
+    <p>Temperature Average: <label class="temperature">{{temperature.degree}}&deg;{{temperature.unit}}</label></p>
+    <p>Wind Strength: <label class="wind">{{wind.speed}}{{wind.unit}}</label> </p>
+  </div>

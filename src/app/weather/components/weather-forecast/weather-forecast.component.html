@@ -1,0 +1,10 @@
+<li class="list-group-item" *ngIf="forecast">
+  <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <h5>{{forecast.time | date:'h:mm a'}}</h5>
+    </div>
+    <img  src="https://openweathermap.org/img/wn/{{forecast.weather.icon}}@2x.png"
+      class="icon weather-icon" alt="temperature">
+  </div>
+  <app-weather-details [wind]="forecast.wind" [temperature]="forecast.temperature"></app-weather-details>
+</li>
